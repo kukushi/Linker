@@ -15,6 +15,8 @@
 		52ACA3B61A42D99E002D7D7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */; };
 		52ACA3C21A42D99E002D7D7F /* LinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */; };
 		52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */; };
+		52F91E6C1A42EA8400A03CC0 /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */; };
+		52F91E6F1A42EDBB00A03CC0 /* LinkCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		52ACA3C01A42D99E002D7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkerTests.swift; sourceTree = "<group>"; };
 		52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
+		52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		52ACA3A61A42D99E002D7D7F /* Linker */ = {
 			isa = PBXGroup;
 			children = (
+				52F91E6D1A42ED8000A03CC0 /* View */,
 				52ACA3CC1A42DA67002D7D7F /* DataSource */,
 				52ACA3CB1A42DA56002D7D7F /* ViewController */,
 				52ACA3AF1A42D99E002D7D7F /* Main.storyboard */,
@@ -122,6 +127,7 @@
 				52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */,
 				52ACA3AB1A42D99E002D7D7F /* HomeViewController.swift */,
 				52ACA3AD1A42D99E002D7D7F /* SettingViewController.swift */,
+				52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -132,6 +138,14 @@
 				52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */,
 			);
 			name = DataSource;
+			sourceTree = "<group>";
+		};
+		52F91E6D1A42ED8000A03CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F91E6C1A42EA8400A03CC0 /* AddLinkViewController.swift in Sources */,
+				52F91E6F1A42EDBB00A03CC0 /* LinkCollectionCell.swift in Sources */,
 				52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */,
 				52ACA3AE1A42D99E002D7D7F /* SettingViewController.swift in Sources */,
 				52ACA3AA1A42D99E002D7D7F /* AppDelegate.swift in Sources */,
