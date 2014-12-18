@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		52ACA3AA1A42D99E002D7D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */; };
-		52ACA3AC1A42D99E002D7D7F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3AB1A42D99E002D7D7F /* FirstViewController.swift */; };
-		52ACA3AE1A42D99E002D7D7F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3AD1A42D99E002D7D7F /* SecondViewController.swift */; };
+		52ACA3AC1A42D99E002D7D7F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3AB1A42D99E002D7D7F /* HomeViewController.swift */; };
+		52ACA3AE1A42D99E002D7D7F /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3AD1A42D99E002D7D7F /* SettingViewController.swift */; };
 		52ACA3B11A42D99E002D7D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3AF1A42D99E002D7D7F /* Main.storyboard */; };
 		52ACA3B31A42D99E002D7D7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3B21A42D99E002D7D7F /* Images.xcassets */; };
 		52ACA3B61A42D99E002D7D7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */; };
 		52ACA3C21A42D99E002D7D7F /* LinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */; };
+		52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +31,15 @@
 		52ACA3A41A42D99E002D7D7F /* Linker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52ACA3A81A42D99E002D7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52ACA3AB1A42D99E002D7D7F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		52ACA3AD1A42D99E002D7D7F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		52ACA3AB1A42D99E002D7D7F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		52ACA3AD1A42D99E002D7D7F /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		52ACA3B01A42D99E002D7D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52ACA3B21A42D99E002D7D7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		52ACA3B51A42D99E002D7D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		52ACA3BB1A42D99E002D7D7F /* LinkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52ACA3C01A42D99E002D7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkerTests.swift; sourceTree = "<group>"; };
+		52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +81,8 @@
 		52ACA3A61A42D99E002D7D7F /* Linker */ = {
 			isa = PBXGroup;
 			children = (
-				52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */,
-				52ACA3AB1A42D99E002D7D7F /* FirstViewController.swift */,
-				52ACA3AD1A42D99E002D7D7F /* SecondViewController.swift */,
+				52ACA3CC1A42DA67002D7D7F /* DataSource */,
+				52ACA3CB1A42DA56002D7D7F /* ViewController */,
 				52ACA3AF1A42D99E002D7D7F /* Main.storyboard */,
 				52ACA3B21A42D99E002D7D7F /* Images.xcassets */,
 				52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */,
@@ -113,6 +114,24 @@
 				52ACA3C01A42D99E002D7D7F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52ACA3CB1A42DA56002D7D7F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */,
+				52ACA3AB1A42D99E002D7D7F /* HomeViewController.swift */,
+				52ACA3AD1A42D99E002D7D7F /* SettingViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		52ACA3CC1A42DA67002D7D7F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */,
+			);
+			name = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,9 +234,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52ACA3AE1A42D99E002D7D7F /* SecondViewController.swift in Sources */,
+				52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */,
+				52ACA3AE1A42D99E002D7D7F /* SettingViewController.swift in Sources */,
 				52ACA3AA1A42D99E002D7D7F /* AppDelegate.swift in Sources */,
-				52ACA3AC1A42D99E002D7D7F /* FirstViewController.swift in Sources */,
+				52ACA3AC1A42D99E002D7D7F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +431,7 @@
 				52ACA3C71A42D99E002D7D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52ACA3C81A42D99E002D7D7F /* Build configuration list for PBXNativeTarget "LinkerTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +440,7 @@
 				52ACA3CA1A42D99E002D7D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

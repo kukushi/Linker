@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  SettingViewController.swift
 //  Linker
 //
 //  Created by kukushi on 12/18/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SettingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
