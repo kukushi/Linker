@@ -16,6 +16,7 @@
 		52ACA3C21A42D99E002D7D7F /* LinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */; };
 		52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */; };
 		52DD65471A43FEBC004864F6 /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65461A43FEBC004864F6 /* LinkManager.swift */; };
+		52DD65B91A441296004864F6 /* BangumiKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65B41A44128C004864F6 /* BangumiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F91E6C1A42EA8400A03CC0 /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */; };
 		52F91E6F1A42EDBB00A03CC0 /* LinkCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,27 @@
 			remoteGlobalIDString = 52ACA3A31A42D99E002D7D7F;
 			remoteInfo = Linker;
 		};
+		52DD65B31A44128C004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52DD65871A4411BC004864F6;
+			remoteInfo = BangumiKit;
+		};
+		52DD65B51A44128C004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52DD65921A4411BD004864F6;
+			remoteInfo = BangumiKitTests;
+		};
+		52DD65B71A441290004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 52DD65861A4411BC004864F6;
+			remoteInfo = BangumiKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				52DD65B91A441296004864F6 /* BangumiKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +81,7 @@
 		52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
 		52DD65461A43FEBC004864F6 /* LinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
 		52DD65481A44011B004864F6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BangumiKit.xcodeproj; path = BangumiKit/BangumiKit.xcodeproj; sourceTree = SOURCE_ROOT; };
 		52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
 		52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +125,7 @@
 		52ACA3A61A42D99E002D7D7F /* Linker */ = {
 			isa = PBXGroup;
 			children = (
+				52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */,
 				52DD65451A43FE83004864F6 /* Manager */,
 				52F91E6D1A42ED8000A03CC0 /* View */,
 				52ACA3CC1A42DA67002D7D7F /* DataSource */,
@@ -166,6 +191,15 @@
 			name = Manager;
 			sourceTree = "<group>";
 		};
+		52DD65AF1A44128C004864F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DD65B41A44128C004864F6 /* BangumiKit.framework */,
+				52DD65B61A44128C004864F6 /* BangumiKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		52F91E6D1A42ED8000A03CC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +223,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				52DD65B81A441290004864F6 /* PBXTargetDependency */,
 			);
 			name = Linker;
 			productName = Linker;
@@ -242,6 +277,12 @@
 			mainGroup = 52ACA39B1A42D99E002D7D7F;
 			productRefGroup = 52ACA3A51A42D99E002D7D7F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52DD65AF1A44128C004864F6 /* Products */;
+					ProjectRef = 52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52ACA3A31A42D99E002D7D7F /* Linker */,
@@ -249,6 +290,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52DD65B41A44128C004864F6 /* BangumiKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BangumiKit.framework;
+			remoteRef = 52DD65B31A44128C004864F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52DD65B61A44128C004864F6 /* BangumiKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BangumiKitTests.xctest;
+			remoteRef = 52DD65B51A44128C004864F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52ACA3A21A42D99E002D7D7F /* Resources */ = {
@@ -300,6 +358,11 @@
 			isa = PBXTargetDependency;
 			target = 52ACA3A31A42D99E002D7D7F /* Linker */;
 			targetProxy = 52ACA3BC1A42D99E002D7D7F /* PBXContainerItemProxy */;
+		};
+		52DD65B81A441290004864F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BangumiKit;
+			targetProxy = 52DD65B71A441290004864F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

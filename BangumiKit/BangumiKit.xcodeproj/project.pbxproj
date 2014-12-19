@@ -7,123 +7,151 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52DD65671A441175004864F6 /* BangumiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DD65661A441175004864F6 /* BangumiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52DD656D1A441175004864F6 /* BangumiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65611A441175004864F6 /* BangumiKit.framework */; };
-		52DD65741A441175004864F6 /* BangumiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65731A441175004864F6 /* BangumiKitTests.swift */; };
+		52DD658D1A4411BC004864F6 /* BangumiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DD658C1A4411BC004864F6 /* BangumiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52DD65931A4411BD004864F6 /* BangumiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65871A4411BC004864F6 /* BangumiKit.framework */; };
+		52DD659A1A4411BD004864F6 /* BangumiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65991A4411BD004864F6 /* BangumiKitTests.swift */; };
+		52DD65AA1A4411F9004864F6 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65A41A4411F9004864F6 /* FileManager.swift */; };
+		52DD65AB1A4411F9004864F6 /* BangumiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65A61A4411F9004864F6 /* BangumiManager.swift */; };
+		52DD65AC1A4411F9004864F6 /* NetRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65A71A4411F9004864F6 /* NetRequester.swift */; };
+		52DD65AD1A4411F9004864F6 /* Bangumi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65A91A4411F9004864F6 /* Bangumi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		52DD656E1A441175004864F6 /* PBXContainerItemProxy */ = {
+		52DD65941A4411BD004864F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 52DD65581A441175004864F6 /* Project object */;
+			containerPortal = 52DD657E1A4411BC004864F6 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 52DD65601A441175004864F6;
+			remoteGlobalIDString = 52DD65861A4411BC004864F6;
 			remoteInfo = BangumiKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		52DD65611A441175004864F6 /* BangumiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BangumiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52DD65651A441175004864F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52DD65661A441175004864F6 /* BangumiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BangumiKit.h; sourceTree = "<group>"; };
-		52DD656C1A441175004864F6 /* BangumiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BangumiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52DD65721A441175004864F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52DD65731A441175004864F6 /* BangumiKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangumiKitTests.swift; sourceTree = "<group>"; };
+		52DD65871A4411BC004864F6 /* BangumiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BangumiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DD658B1A4411BC004864F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DD658C1A4411BC004864F6 /* BangumiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BangumiKit.h; sourceTree = "<group>"; };
+		52DD65921A4411BD004864F6 /* BangumiKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BangumiKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52DD65981A4411BD004864F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52DD65991A4411BD004864F6 /* BangumiKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BangumiKitTests.swift; sourceTree = "<group>"; };
+		52DD65A41A4411F9004864F6 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		52DD65A61A4411F9004864F6 /* BangumiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiManager.swift; sourceTree = "<group>"; };
+		52DD65A71A4411F9004864F6 /* NetRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequester.swift; sourceTree = "<group>"; };
+		52DD65A91A4411F9004864F6 /* Bangumi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bangumi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		52DD655D1A441175004864F6 /* Frameworks */ = {
+		52DD65831A4411BC004864F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52DD65691A441175004864F6 /* Frameworks */ = {
+		52DD658F1A4411BD004864F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DD656D1A441175004864F6 /* BangumiKit.framework in Frameworks */,
+				52DD65931A4411BD004864F6 /* BangumiKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		52DD65571A441175004864F6 = {
+		52DD657D1A4411BC004864F6 = {
 			isa = PBXGroup;
 			children = (
-				52DD65631A441175004864F6 /* BangumiKit */,
-				52DD65701A441175004864F6 /* BangumiKitTests */,
-				52DD65621A441175004864F6 /* Products */,
+				52DD65891A4411BC004864F6 /* BangumiKit */,
+				52DD65961A4411BD004864F6 /* BangumiKitTests */,
+				52DD65881A4411BC004864F6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		52DD65621A441175004864F6 /* Products */ = {
+		52DD65881A4411BC004864F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52DD65611A441175004864F6 /* BangumiKit.framework */,
-				52DD656C1A441175004864F6 /* BangumiKitTests.xctest */,
+				52DD65871A4411BC004864F6 /* BangumiKit.framework */,
+				52DD65921A4411BD004864F6 /* BangumiKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		52DD65631A441175004864F6 /* BangumiKit */ = {
+		52DD65891A4411BC004864F6 /* BangumiKit */ = {
 			isa = PBXGroup;
 			children = (
-				52DD65661A441175004864F6 /* BangumiKit.h */,
-				52DD65641A441175004864F6 /* Supporting Files */,
+				52DD658C1A4411BC004864F6 /* BangumiKit.h */,
+				52DD65A41A4411F9004864F6 /* FileManager.swift */,
+				52DD65A51A4411F9004864F6 /* Manager */,
+				52DD65A81A4411F9004864F6 /* Model */,
+				52DD658A1A4411BC004864F6 /* Supporting Files */,
 			);
 			path = BangumiKit;
 			sourceTree = "<group>";
 		};
-		52DD65641A441175004864F6 /* Supporting Files */ = {
+		52DD658A1A4411BC004864F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52DD65651A441175004864F6 /* Info.plist */,
+				52DD658B1A4411BC004864F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		52DD65701A441175004864F6 /* BangumiKitTests */ = {
+		52DD65961A4411BD004864F6 /* BangumiKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				52DD65731A441175004864F6 /* BangumiKitTests.swift */,
-				52DD65711A441175004864F6 /* Supporting Files */,
+				52DD65991A4411BD004864F6 /* BangumiKitTests.swift */,
+				52DD65971A4411BD004864F6 /* Supporting Files */,
 			);
 			path = BangumiKitTests;
 			sourceTree = "<group>";
 		};
-		52DD65711A441175004864F6 /* Supporting Files */ = {
+		52DD65971A4411BD004864F6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				52DD65721A441175004864F6 /* Info.plist */,
+				52DD65981A4411BD004864F6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52DD65A51A4411F9004864F6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52DD65A61A4411F9004864F6 /* BangumiManager.swift */,
+				52DD65A71A4411F9004864F6 /* NetRequester.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		52DD65A81A4411F9004864F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52DD65A91A4411F9004864F6 /* Bangumi.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		52DD655E1A441175004864F6 /* Headers */ = {
+		52DD65841A4411BC004864F6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DD65671A441175004864F6 /* BangumiKit.h in Headers */,
+				52DD658D1A4411BC004864F6 /* BangumiKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		52DD65601A441175004864F6 /* BangumiKit */ = {
+		52DD65861A4411BC004864F6 /* BangumiKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52DD65771A441175004864F6 /* Build configuration list for PBXNativeTarget "BangumiKit" */;
+			buildConfigurationList = 52DD659D1A4411BD004864F6 /* Build configuration list for PBXNativeTarget "BangumiKit" */;
 			buildPhases = (
-				52DD655C1A441175004864F6 /* Sources */,
-				52DD655D1A441175004864F6 /* Frameworks */,
-				52DD655E1A441175004864F6 /* Headers */,
-				52DD655F1A441175004864F6 /* Resources */,
+				52DD65821A4411BC004864F6 /* Sources */,
+				52DD65831A4411BC004864F6 /* Frameworks */,
+				52DD65841A4411BC004864F6 /* Headers */,
+				52DD65851A4411BC004864F6 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -131,71 +159,71 @@
 			);
 			name = BangumiKit;
 			productName = BangumiKit;
-			productReference = 52DD65611A441175004864F6 /* BangumiKit.framework */;
+			productReference = 52DD65871A4411BC004864F6 /* BangumiKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		52DD656B1A441175004864F6 /* BangumiKitTests */ = {
+		52DD65911A4411BD004864F6 /* BangumiKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52DD657A1A441175004864F6 /* Build configuration list for PBXNativeTarget "BangumiKitTests" */;
+			buildConfigurationList = 52DD65A01A4411BD004864F6 /* Build configuration list for PBXNativeTarget "BangumiKitTests" */;
 			buildPhases = (
-				52DD65681A441175004864F6 /* Sources */,
-				52DD65691A441175004864F6 /* Frameworks */,
-				52DD656A1A441175004864F6 /* Resources */,
+				52DD658E1A4411BD004864F6 /* Sources */,
+				52DD658F1A4411BD004864F6 /* Frameworks */,
+				52DD65901A4411BD004864F6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				52DD656F1A441175004864F6 /* PBXTargetDependency */,
+				52DD65951A4411BD004864F6 /* PBXTargetDependency */,
 			);
 			name = BangumiKitTests;
 			productName = BangumiKitTests;
-			productReference = 52DD656C1A441175004864F6 /* BangumiKitTests.xctest */;
+			productReference = 52DD65921A4411BD004864F6 /* BangumiKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		52DD65581A441175004864F6 /* Project object */ = {
+		52DD657E1A4411BC004864F6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Xing He";
 				TargetAttributes = {
-					52DD65601A441175004864F6 = {
+					52DD65861A4411BC004864F6 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					52DD656B1A441175004864F6 = {
+					52DD65911A4411BD004864F6 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
 				};
 			};
-			buildConfigurationList = 52DD655B1A441175004864F6 /* Build configuration list for PBXProject "BangumiKit" */;
+			buildConfigurationList = 52DD65811A4411BC004864F6 /* Build configuration list for PBXProject "BangumiKit" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 52DD65571A441175004864F6;
-			productRefGroup = 52DD65621A441175004864F6 /* Products */;
+			mainGroup = 52DD657D1A4411BC004864F6;
+			productRefGroup = 52DD65881A4411BC004864F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52DD65601A441175004864F6 /* BangumiKit */,
-				52DD656B1A441175004864F6 /* BangumiKitTests */,
+				52DD65861A4411BC004864F6 /* BangumiKit */,
+				52DD65911A4411BD004864F6 /* BangumiKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		52DD655F1A441175004864F6 /* Resources */ = {
+		52DD65851A4411BC004864F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52DD656A1A441175004864F6 /* Resources */ = {
+		52DD65901A4411BD004864F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -205,33 +233,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		52DD655C1A441175004864F6 /* Sources */ = {
+		52DD65821A4411BC004864F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52DD65AC1A4411F9004864F6 /* NetRequester.swift in Sources */,
+				52DD65AA1A4411F9004864F6 /* FileManager.swift in Sources */,
+				52DD65AB1A4411F9004864F6 /* BangumiManager.swift in Sources */,
+				52DD65AD1A4411F9004864F6 /* Bangumi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52DD65681A441175004864F6 /* Sources */ = {
+		52DD658E1A4411BD004864F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52DD65741A441175004864F6 /* BangumiKitTests.swift in Sources */,
+				52DD659A1A4411BD004864F6 /* BangumiKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		52DD656F1A441175004864F6 /* PBXTargetDependency */ = {
+		52DD65951A4411BD004864F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 52DD65601A441175004864F6 /* BangumiKit */;
-			targetProxy = 52DD656E1A441175004864F6 /* PBXContainerItemProxy */;
+			target = 52DD65861A4411BC004864F6 /* BangumiKit */;
+			targetProxy = 52DD65941A4411BD004864F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		52DD65751A441175004864F6 /* Debug */ = {
+		52DD659B1A4411BD004864F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		52DD65761A441175004864F6 /* Release */ = {
+		52DD659C1A4411BD004864F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -316,9 +348,10 @@
 			};
 			name = Release;
 		};
-		52DD65781A441175004864F6 /* Debug */ = {
+		52DD659E1A4411BD004864F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -328,12 +361,14 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		52DD65791A441175004864F6 /* Release */ = {
+		52DD659F1A4411BD004864F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -346,7 +381,7 @@
 			};
 			name = Release;
 		};
-		52DD657B1A441175004864F6 /* Debug */ = {
+		52DD65A11A4411BD004864F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -363,7 +398,7 @@
 			};
 			name = Debug;
 		};
-		52DD657C1A441175004864F6 /* Release */ = {
+		52DD65A21A4411BD004864F6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
@@ -379,32 +414,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52DD655B1A441175004864F6 /* Build configuration list for PBXProject "BangumiKit" */ = {
+		52DD65811A4411BC004864F6 /* Build configuration list for PBXProject "BangumiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52DD65751A441175004864F6 /* Debug */,
-				52DD65761A441175004864F6 /* Release */,
+				52DD659B1A4411BD004864F6 /* Debug */,
+				52DD659C1A4411BD004864F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52DD65771A441175004864F6 /* Build configuration list for PBXNativeTarget "BangumiKit" */ = {
+		52DD659D1A4411BD004864F6 /* Build configuration list for PBXNativeTarget "BangumiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52DD65781A441175004864F6 /* Debug */,
-				52DD65791A441175004864F6 /* Release */,
+				52DD659E1A4411BD004864F6 /* Debug */,
+				52DD659F1A4411BD004864F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		52DD657A1A441175004864F6 /* Build configuration list for PBXNativeTarget "BangumiKitTests" */ = {
+		52DD65A01A4411BD004864F6 /* Build configuration list for PBXNativeTarget "BangumiKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				52DD657B1A441175004864F6 /* Debug */,
-				52DD657C1A441175004864F6 /* Release */,
+				52DD65A11A4411BD004864F6 /* Debug */,
+				52DD65A21A4411BD004864F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 52DD65581A441175004864F6 /* Project object */;
+	rootObject = 52DD657E1A4411BC004864F6 /* Project object */;
 }
