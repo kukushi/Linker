@@ -15,6 +15,8 @@
 		52ACA3B61A42D99E002D7D7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */; };
 		52ACA3C21A42D99E002D7D7F /* LinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */; };
 		52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */; };
+		52DD65471A43FEBC004864F6 /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65461A43FEBC004864F6 /* LinkManager.swift */; };
+		52DD65541A4403B7004864F6 /* CryptoSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65501A44038B004864F6 /* CryptoSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52F91E6C1A42EA8400A03CC0 /* AddLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */; };
 		52F91E6F1A42EDBB00A03CC0 /* LinkCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +29,42 @@
 			remoteGlobalIDString = 52ACA3A31A42D99E002D7D7F;
 			remoteInfo = Linker;
 		};
+		52DD654F1A44038B004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE45519693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
+		52DD65511A44038B004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 754BE46019693E190098E6F3;
+			remoteInfo = CryptoSwiftTests;
+		};
+		52DD65551A4403DA004864F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 754BE45419693E190098E6F3;
+			remoteInfo = CryptoSwift;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		52DD65531A44039D004864F6 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				52DD65541A4403B7004864F6 /* CryptoSwift.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		52ACA3A41A42D99E002D7D7F /* Linker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +79,9 @@
 		52ACA3C01A42D99E002D7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkerTests.swift; sourceTree = "<group>"; };
 		52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		52DD65461A43FEBC004864F6 /* LinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
+		52DD65481A44011B004864F6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CryptoSwift.xcodeproj; path = CryptoSwift/CryptoSwift.xcodeproj; sourceTree = SOURCE_ROOT; };
 		52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddLinkViewController.swift; sourceTree = "<group>"; };
 		52F91E6E1A42EDBB00A03CC0 /* LinkCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCollectionCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +125,8 @@
 		52ACA3A61A42D99E002D7D7F /* Linker */ = {
 			isa = PBXGroup;
 			children = (
+				52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */,
+				52DD65451A43FE83004864F6 /* Manager */,
 				52F91E6D1A42ED8000A03CC0 /* View */,
 				52ACA3CC1A42DA67002D7D7F /* DataSource */,
 				52ACA3CB1A42DA56002D7D7F /* ViewController */,
@@ -92,6 +134,7 @@
 				52ACA3B21A42D99E002D7D7F /* Images.xcassets */,
 				52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */,
 				52ACA3A71A42D99E002D7D7F /* Supporting Files */,
+				52DD65481A44011B004864F6 /* MyPlayground.playground */,
 			);
 			path = Linker;
 			sourceTree = "<group>";
@@ -140,6 +183,23 @@
 			name = DataSource;
 			sourceTree = "<group>";
 		};
+		52DD65451A43FE83004864F6 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				52DD65461A43FEBC004864F6 /* LinkManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		52DD654B1A44038B004864F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52DD65501A44038B004864F6 /* CryptoSwift.framework */,
+				52DD65521A44038B004864F6 /* CryptoSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		52F91E6D1A42ED8000A03CC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,10 +218,12 @@
 				52ACA3A01A42D99E002D7D7F /* Sources */,
 				52ACA3A11A42D99E002D7D7F /* Frameworks */,
 				52ACA3A21A42D99E002D7D7F /* Resources */,
+				52DD65531A44039D004864F6 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				52DD65561A4403DA004864F6 /* PBXTargetDependency */,
 			);
 			name = Linker;
 			productName = Linker;
@@ -215,6 +277,12 @@
 			mainGroup = 52ACA39B1A42D99E002D7D7F;
 			productRefGroup = 52ACA3A51A42D99E002D7D7F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 52DD654B1A44038B004864F6 /* Products */;
+					ProjectRef = 52DD654A1A44038B004864F6 /* CryptoSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				52ACA3A31A42D99E002D7D7F /* Linker */,
@@ -222,6 +290,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		52DD65501A44038B004864F6 /* CryptoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CryptoSwift.framework;
+			remoteRef = 52DD654F1A44038B004864F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52DD65521A44038B004864F6 /* CryptoSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CryptoSwiftTests.xctest;
+			remoteRef = 52DD65511A44038B004864F6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		52ACA3A21A42D99E002D7D7F /* Resources */ = {
@@ -251,6 +336,7 @@
 				52F91E6C1A42EA8400A03CC0 /* AddLinkViewController.swift in Sources */,
 				52F91E6F1A42EDBB00A03CC0 /* LinkCollectionCell.swift in Sources */,
 				52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */,
+				52DD65471A43FEBC004864F6 /* LinkManager.swift in Sources */,
 				52ACA3AE1A42D99E002D7D7F /* SettingViewController.swift in Sources */,
 				52ACA3AA1A42D99E002D7D7F /* AppDelegate.swift in Sources */,
 				52ACA3AC1A42D99E002D7D7F /* HomeViewController.swift in Sources */,
@@ -272,6 +358,11 @@
 			isa = PBXTargetDependency;
 			target = 52ACA3A31A42D99E002D7D7F /* Linker */;
 			targetProxy = 52ACA3BC1A42D99E002D7D7F /* PBXContainerItemProxy */;
+		};
+		52DD65561A4403DA004864F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoSwift;
+			targetProxy = 52DD65551A4403DA004864F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
