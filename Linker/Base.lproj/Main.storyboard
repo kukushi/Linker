@@ -76,6 +76,7 @@
                                         <size key="customSize" width="314" height="51"/>
                                         <connections>
                                             <outlet property="textLabel" destination="8rw-eC-suN" id="1fR-Sh-hdA"/>
+                                            <segue destination="juq-fz-X5E" kind="show" id="leB-xL-xC6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -99,6 +100,78 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afs-e8-x6f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2302.5" y="-320.25"/>
+        </scene>
+        <!--Bangumi Search View Controller-->
+        <scene sceneID="iWB-UZ-S9t">
+            <objects>
+                <viewController id="juq-fz-X5E" customClass="BangumiSearchViewController" customModule="Linker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zlr-Lf-uX6"/>
+                        <viewControllerLayoutGuide type="bottom" id="c3b-2i-cE9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tTq-mj-gOM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dNt-yS-bJb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="juq-fz-X5E" id="T18-xq-Org"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dNt-yS-bJb" firstAttribute="leading" secondItem="tTq-mj-gOM" secondAttribute="leadingMargin" constant="-16" id="7VZ-Yy-B54"/>
+                            <constraint firstItem="dNt-yS-bJb" firstAttribute="top" secondItem="Zlr-Lf-uX6" secondAttribute="bottom" id="KmL-FG-oNa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dNt-yS-bJb" secondAttribute="trailing" constant="-16" id="VmB-Wp-vJz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dNt-yS-bJb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7VZ-Yy-B54"/>
+                                <exclude reference="KmL-FG-oNa"/>
+                                <exclude reference="VmB-Wp-vJz"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dNt-yS-bJb"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7VZ-Yy-B54"/>
+                                <include reference="KmL-FG-oNa"/>
+                                <include reference="VmB-Wp-vJz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="GKn-No-vDn" id="Emh-C7-c2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYF-cm-dXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="DlY-YZ-ZUR">
+                    <connections>
+                        <outlet property="delegate" destination="juq-fz-X5E" id="jOq-bw-jH0"/>
+                        <outlet property="searchContentsController" destination="juq-fz-X5E" id="xtx-N4-ET7"/>
+                        <outlet property="searchResultsDataSource" destination="juq-fz-X5E" id="BP5-1l-r8G"/>
+                        <outlet property="searchResultsDelegate" destination="juq-fz-X5E" id="6d2-Rw-be4"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="GKn-No-vDn">
+                    <connections>
+                        <outlet property="delegate" destination="juq-fz-X5E" id="0VT-PE-MZp"/>
+                        <outlet property="searchBar" destination="dNt-yS-bJb" id="3fG-Lp-zUb"/>
+                        <outlet property="searchContentsController" destination="juq-fz-X5E" id="8gI-iV-0Ls"/>
+                        <outlet property="searchResultsDataSource" destination="juq-fz-X5E" id="OH8-Rr-eMc"/>
+                        <outlet property="searchResultsDelegate" destination="juq-fz-X5E" id="qKu-Zp-ILk"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="3109.5" y="-320.25"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
