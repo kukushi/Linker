@@ -20,7 +20,7 @@ class BangumiSearchViewController: UIViewController {
         dataSource.cellIdentifier = "BilibiliSearchCell"
         dataSource.configureBlock = { (cell, item) -> Void in
             let theCell = cell as UITableViewCell
-            theCell.textLabel?.text = item as? String
+            theCell.textLabel.text = item as? String
         }
         searchDisplayController?.searchResultsTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "BilibiliSearchCell")
         searchDisplayController?.searchResultsDataSource = dataSource
@@ -59,6 +59,7 @@ extension BangumiSearchViewController: UISearchDisplayDelegate, UISearchBarDeleg
         dataSource.items = originalItems.filter({
             $0.rangeOfString(stringToSearch) != nil
         })
+        searchDisplayController?.searchResultsTableView.reloadData()
     }
 }
 
