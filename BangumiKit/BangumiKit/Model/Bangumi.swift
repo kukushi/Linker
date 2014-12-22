@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public enum BangumiSeasonType: Int {
     case Undefined = 0
@@ -60,30 +61,15 @@ public class Bangumi: NSObject, NSCoding {
         aCoder.encodeObject(coverURLString, forKey: "coverURLString")
     }
     
-    convenience init(dict: [String: AnyObject]!) {
+    convenience init(dict: JSON) {
         self.init()
         
-        let name = dict["title"] as? String
-        self.name = name ?? ""
-        
-        let epCount = dict["bgmcount"] as? String
-        self.epCount = epCount?.toInt() ?? 0
-        
-        if let weekday = dict?["weekday"] as? NSNumber {
-            self.weekday = WeekdayType(rawValue: weekday.integerValue)!;
-        }
-        
-        if let spID = dict?["spid"] as? NSNumber {
-            self.spID = spID.integerValue
-        }
-        
-        if let aliasSpID = dict?["alias_spid"] as? String {
-            self.aliasSpID = aliasSpID
-        }
-        
-        if let coverURLString = dict?["cover"] as? String {
-            self.coverURLString = coverURLString
-        }
+        name = dict["title"].stringValue
+        epCount = dict["bgmcount"].intValue
+        weekday = WeekdayType(rawValue: dict["weekday"].intValue)!
+        spID = dict["spid"].intValue
+        aliasSpID = dict["alias_spid"].stringValue
+        coverURLString = dict["cover"].stringValue
     }
     
     override public var hash: Int {

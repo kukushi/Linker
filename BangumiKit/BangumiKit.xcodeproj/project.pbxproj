@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		52BC0ECD1A47F2F8001D2DAE /* BangumiSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC0ECC1A47F2F8001D2DAE /* BangumiSP.swift */; };
+		52D6BF011A48197C004D673D /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0F5F1A47F826001D2DAE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52D6BF031A481980004D673D /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0F541A47F7DF001D2DAE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52DD658D1A4411BC004864F6 /* BangumiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DD658C1A4411BC004864F6 /* BangumiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		52DD65931A4411BD004864F6 /* BangumiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65871A4411BC004864F6 /* BangumiKit.framework */; };
 		52DD659A1A4411BD004864F6 /* BangumiKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65991A4411BD004864F6 /* BangumiKitTests.swift */; };
@@ -90,6 +92,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				52D6BF031A481980004D673D /* Alamofire.framework in Copy Frameworks */,
+				52D6BF011A48197C004D673D /* SwiftyJSON.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -504,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 public enum NetRequesterErrorType: Int {
     case Success
@@ -71,12 +72,12 @@ class NetRequester {
 extension NetRequester {
     
     private func parseBangumis(data: NSData) -> [Bangumi]? {
-        if let jsonArray = NSJSONSerialization.JSONObjectWithData(data, options: .MutableContainers, error: nil) as? [AnyObject] {
-            var bangumis = [Bangumi]()
-            for dict in jsonArray {
-                if let theDict = dict as? [String: AnyObject] {
-                    bangumis.append(Bangumi(dict: theDict))
-                }
+        /*
+        let JSONData = JSON(data: data)
+        var bangumis = [Bangumi]()
+        if let array = JSONData.array {
+            for dict in array {
+                bangumis.append(Bangumi(dict: dict))
             }
             return bangumis
         }
@@ -84,5 +85,7 @@ extension NetRequester {
 //            Alamofire.Manager.sharedInstance.request(<#method: Method#>, <#URLString: URLStringConvertible#>, parameters: <#[String : AnyObject]?#>, encoding: <#ParameterEncoding#>)
             return nil
         }
+*/
+        return nil
     }
 }
