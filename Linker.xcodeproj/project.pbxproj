@@ -15,6 +15,8 @@
 		52ACA3B61A42D99E002D7D7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */; };
 		52ACA3C21A42D99E002D7D7F /* LinkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */; };
 		52ACA3CE1A42DA75002D7D7F /* CollectionArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */; };
+		52BC0EC61A47C425001D2DAE /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0EC21A47C409001D2DAE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		52BC0EE21A47F57F001D2DAE /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0ED91A47F56C001D2DAE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52DD65471A43FEBC004864F6 /* LinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65461A43FEBC004864F6 /* LinkManager.swift */; };
 		52DD65B91A441296004864F6 /* BangumiKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52DD65B41A44128C004864F6 /* BangumiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52DD65CA1A442D1B004864F6 /* BangumiSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DD65C91A442D1B004864F6 /* BangumiSearchViewController.swift */; };
@@ -29,6 +31,62 @@
 			proxyType = 1;
 			remoteGlobalIDString = 52ACA3A31A42D99E002D7D7F;
 			remoteInfo = Linker;
+		};
+		52BC0EC11A47C409001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		52BC0EC31A47C409001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		52BC0EC71A47C42A001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		52BC0ED81A47F56C001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = SwiftyJSON;
+		};
+		52BC0EDA1A47F56C001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = SwiftyJSONTests;
+		};
+		52BC0EDC1A47F56C001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1C91A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSX;
+		};
+		52BC0EDE1A47F56C001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4EC1C1D31A0C1A2D0026ED0B;
+			remoteInfo = SwiftyJSONOSXTests;
+		};
+		52BC0EE01A47F577001D2DAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E4FEFDA19575BE100351305;
+			remoteInfo = SwiftyJSON;
 		};
 		52DD65B31A44128C004864F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -60,6 +118,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				52BC0EE21A47F57F001D2DAE /* SwiftyJSON.framework in Copy Frameworks */,
+				52BC0EC61A47C425001D2DAE /* Alamofire.framework in Copy Frameworks */,
 				52DD65B91A441296004864F6 /* BangumiKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
@@ -80,6 +140,8 @@
 		52ACA3C01A42D99E002D7D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52ACA3C11A42D99E002D7D7F /* LinkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkerTests.swift; sourceTree = "<group>"; };
 		52ACA3CD1A42DA75002D7D7F /* CollectionArrayDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionArrayDataSource.swift; sourceTree = "<group>"; };
+		52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = SOURCE_ROOT; };
+		52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = SOURCE_ROOT; };
 		52DD65461A43FEBC004864F6 /* LinkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkManager.swift; sourceTree = "<group>"; };
 		52DD65481A44011B004864F6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BangumiKit.xcodeproj; path = BangumiKit/BangumiKit.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -127,6 +189,8 @@
 		52ACA3A61A42D99E002D7D7F /* Linker */ = {
 			isa = PBXGroup;
 			children = (
+				52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */,
+				52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */,
 				52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */,
 				52DD65451A43FE83004864F6 /* Manager */,
 				52F91E6D1A42ED8000A03CC0 /* View */,
@@ -186,6 +250,26 @@
 			name = DataSource;
 			sourceTree = "<group>";
 		};
+		52BC0EBD1A47C409001D2DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BC0EC21A47C409001D2DAE /* Alamofire.framework */,
+				52BC0EC41A47C409001D2DAE /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BC0ED01A47F56C001D2DAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BC0ED91A47F56C001D2DAE /* SwiftyJSON.framework */,
+				52BC0EDB1A47F56C001D2DAE /* SwiftyJSONTests.xctest */,
+				52BC0EDD1A47F56C001D2DAE /* SwiftyJSON.framework */,
+				52BC0EDF1A47F56C001D2DAE /* SwiftyJSONOSXTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		52DD65451A43FE83004864F6 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +310,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				52BC0EE11A47F577001D2DAE /* PBXTargetDependency */,
+				52BC0EC81A47C42A001D2DAE /* PBXTargetDependency */,
 				52DD65B81A441290004864F6 /* PBXTargetDependency */,
 			);
 			name = Linker;
@@ -282,8 +368,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 52BC0EBD1A47C409001D2DAE /* Products */;
+					ProjectRef = 52BC0EBC1A47C409001D2DAE /* Alamofire.xcodeproj */;
+				},
+				{
 					ProductGroup = 52DD65AF1A44128C004864F6 /* Products */;
 					ProjectRef = 52DD65AE1A44128C004864F6 /* BangumiKit.xcodeproj */;
+				},
+				{
+					ProductGroup = 52BC0ED01A47F56C001D2DAE /* Products */;
+					ProjectRef = 52BC0ECF1A47F56C001D2DAE /* SwiftyJSON.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -295,6 +389,48 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		52BC0EC21A47C409001D2DAE /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 52BC0EC11A47C409001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52BC0EC41A47C409001D2DAE /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 52BC0EC31A47C409001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52BC0ED91A47F56C001D2DAE /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 52BC0ED81A47F56C001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52BC0EDB1A47F56C001D2DAE /* SwiftyJSONTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONTests.xctest;
+			remoteRef = 52BC0EDA1A47F56C001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52BC0EDD1A47F56C001D2DAE /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 52BC0EDC1A47F56C001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		52BC0EDF1A47F56C001D2DAE /* SwiftyJSONOSXTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwiftyJSONOSXTests.xctest;
+			remoteRef = 52BC0EDE1A47F56C001D2DAE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		52DD65B41A44128C004864F6 /* BangumiKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -362,6 +498,16 @@
 			isa = PBXTargetDependency;
 			target = 52ACA3A31A42D99E002D7D7F /* Linker */;
 			targetProxy = 52ACA3BC1A42D99E002D7D7F /* PBXContainerItemProxy */;
+		};
+		52BC0EC81A47C42A001D2DAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 52BC0EC71A47C42A001D2DAE /* PBXContainerItemProxy */;
+		};
+		52BC0EE11A47F577001D2DAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			targetProxy = 52BC0EE01A47F577001D2DAE /* PBXContainerItemProxy */;
 		};
 		52DD65B81A441290004864F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
