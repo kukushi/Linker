@@ -18,6 +18,7 @@ public enum NetRequesterErrorType: Int {
 }
 
 public typealias BangumisFetcherCallback = (bangumis:[Bangumi]!, errorType:NetRequesterErrorType) -> Void
+public typealias SPFetcherCallback = (bangumiSPs:[BangumiSP]!, errorType:NetRequesterErrorType) -> Void
 //public typealias BangumiSearchResultCallback
 /**
 *  Net
@@ -35,6 +36,7 @@ class NetRequester {
     
     // MARK:
     private let bangumisFetchingURL = NSURL(string: "http://www.bilibili.tv/index/bangumi.json")
+    private let host = "http://api.bilibili.com"
     private let BilibiliAPIkey = "0f38c1b83b2de0a0"
     
     // MARK: Fetch Bangumis
@@ -62,6 +64,40 @@ class NetRequester {
             })
             
         }).resume()
+    }
+    
+    // MARK: Fetch SP
+    func fetchSP(#spID: Int) {
+//        let parameters = [
+//            "appkey": BilibiliAPIkey,
+//            "bangumi": 1,
+//            "platform": "ios",
+//            "season_id": 0,
+//            "spid": spID,
+//            "type": "",
+//        ]
+        
+        let parameters = [
+            "foo": "bar",
+            "baz": ["a", 1],
+            "qux": [
+                "x": 1,
+                "y": 2,
+                "z": 3
+            ]
+        ]
+        
+        Alamofire.request(.GET, "123", parameters: [
+            "foo": "bar",
+            "baz": ["a", 1],
+            "qux": [
+                "x": 1,
+                "y": 2,
+                "z": 3
+            ]
+            ])//.response { (request, repsonse, data, error) -> Void in
+            
+        //}
     }
     
 //    func fetchSearchResult(keyword: String, callback: )

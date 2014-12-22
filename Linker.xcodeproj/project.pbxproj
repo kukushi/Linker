@@ -196,6 +196,7 @@
 				52F91E6D1A42ED8000A03CC0 /* View */,
 				52ACA3CC1A42DA67002D7D7F /* DataSource */,
 				52ACA3CB1A42DA56002D7D7F /* ViewController */,
+				52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */,
 				52ACA3AF1A42D99E002D7D7F /* Main.storyboard */,
 				52ACA3B21A42D99E002D7D7F /* Images.xcassets */,
 				52ACA3B41A42D99E002D7D7F /* LaunchScreen.xib */,
@@ -233,7 +234,6 @@
 		52ACA3CB1A42DA56002D7D7F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				52ACA3A91A42D99E002D7D7F /* AppDelegate.swift */,
 				52ACA3AB1A42D99E002D7D7F /* HomeViewController.swift */,
 				52ACA3AD1A42D99E002D7D7F /* SettingViewController.swift */,
 				52F91E6B1A42EA8400A03CC0 /* AddLinkViewController.swift */,
@@ -348,6 +348,11 @@
 				TargetAttributes = {
 					52ACA3A31A42D99E002D7D7F = {
 						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					52ACA3BA1A42D99E002D7D7F = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -570,7 +575,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -607,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

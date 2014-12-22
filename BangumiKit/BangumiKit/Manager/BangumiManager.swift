@@ -18,6 +18,7 @@ public class BangumiManager {
     
     private var shouldSaveStarBangumiData = false
     private var shouldSaveBangumiData = false
+    private var observedSPList: [String]!
     
     
     
@@ -30,7 +31,8 @@ public class BangumiManager {
         }
     }
     
-    public typealias BangumiBackgroundFetch = (fetchResult: UIBackgroundFetchResult) -> ()
+    public typealias BangumiBackgroundFetch = (fetchResult: UIBackgroundFetchResult) -> Void
+    public typealias SPBackgroundFetch = (fetchResult: UIBackgroundFetchResult) -> Void
     
     // MARK: Singleton
     
@@ -51,6 +53,8 @@ public class BangumiManager {
     deinit {
         NSNotificationCenter.defaultCenter().removeObserver(self)
     }
+    
+    // MARK: Background Fetch
     
     /**
     A method used to work with background fetch. Fetch bangumis data from net and compare it with the cached data.
@@ -96,6 +100,13 @@ public class BangumiManager {
                     }
                 }
             }
+        }
+    }
+    
+    
+    public func checkSPUpdate(#SPBackgroundFetcher: SPBackgroundFetch) {
+        for spID in observedSPList {
+            
         }
     }
     

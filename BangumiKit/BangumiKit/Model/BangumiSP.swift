@@ -9,7 +9,14 @@
 import Foundation
 import SwiftyJSON
 
-class BangumiSP {
-    var title: String!
-
+public class BangumiSP {
+    let title: String!
+    var description: String!
+    var spID: Int!
+    let coverURL: String!
+    
+    
+    init (dict: JSON) {
+        title = dict["title"].stringValue
+    }
 }
