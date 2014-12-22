@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 public enum NetRequesterErrorType: Int {
     case Success
@@ -16,6 +17,7 @@ public enum NetRequesterErrorType: Int {
 }
 
 public typealias BangumisFetcherCallback = (bangumis:[Bangumi]!, errorType:NetRequesterErrorType) -> Void
+//public typealias BangumiSearchResultCallback
 /**
 *  Net
 */
@@ -60,6 +62,8 @@ class NetRequester {
             
         }).resume()
     }
+    
+//    func fetchSearchResult(keyword: String, callback: )
 }
 
 // MARK: Implementation
@@ -77,6 +81,7 @@ extension NetRequester {
             return bangumis
         }
         else {
+//            Alamofire.Manager.sharedInstance.request(<#method: Method#>, <#URLString: URLStringConvertible#>, parameters: <#[String : AnyObject]?#>, encoding: <#ParameterEncoding#>)
             return nil
         }
     }
