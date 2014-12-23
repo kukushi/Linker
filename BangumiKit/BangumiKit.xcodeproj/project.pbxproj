@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52BC0ECD1A47F2F8001D2DAE /* BangumiSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BC0ECC1A47F2F8001D2DAE /* BangumiSP.swift */; };
+		52C8783D1A491274004FE26D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C8783C1A491274004FE26D /* Episode.swift */; };
 		52D6BF011A48197C004D673D /* SwiftyJSON.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0F5F1A47F826001D2DAE /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52D6BF031A481980004D673D /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 52BC0F541A47F7DF001D2DAE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52DD658D1A4411BC004864F6 /* BangumiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 52DD658C1A4411BC004864F6 /* BangumiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -104,6 +105,7 @@
 		52BC0ECC1A47F2F8001D2DAE /* BangumiSP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiSP.swift; sourceTree = "<group>"; };
 		52BC0F4E1A47F7DF001D2DAE /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = ../Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
 		52BC0F571A47F825001D2DAE /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = ../SwiftyJSON/SwiftyJSON.xcodeproj; sourceTree = "<group>"; };
+		52C8783C1A491274004FE26D /* Episode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		52DD65871A4411BC004864F6 /* BangumiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BangumiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52DD658B1A4411BC004864F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52DD658C1A4411BC004864F6 /* BangumiKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BangumiKit.h; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				52DD65A91A4411F9004864F6 /* Bangumi.swift */,
+				52C8783C1A491274004FE26D /* Episode.swift */,
 				52BC0ECC1A47F2F8001D2DAE /* BangumiSP.swift */,
 			);
 			path = Model;
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52DD65AC1A4411F9004864F6 /* NetRequester.swift in Sources */,
+				52C8783D1A491274004FE26D /* Episode.swift in Sources */,
 				52BC0ECD1A47F2F8001D2DAE /* BangumiSP.swift in Sources */,
 				52DD65AA1A4411F9004864F6 /* FileManager.swift in Sources */,
 				52DD65AB1A4411F9004864F6 /* BangumiManager.swift in Sources */,

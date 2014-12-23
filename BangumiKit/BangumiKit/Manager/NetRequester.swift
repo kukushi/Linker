@@ -68,35 +68,20 @@ class NetRequester {
     
     // MARK: Fetch SP
     func fetchSP(#spID: Int) {
-//        let parameters = [
-//            "appkey": BilibiliAPIkey,
-//            "bangumi": 1,
-//            "platform": "ios",
-//            "season_id": 0,
-//            "spid": spID,
-//            "type": "",
-//        ]
-        
-        let parameters = [
-            "foo": "bar",
-            "baz": ["a", 1],
-            "qux": [
-                "x": 1,
-                "y": 2,
-                "z": 3
-            ]
+        var parameters : [String: AnyObject] = [
+            "appkey": BilibiliAPIkey,
+            "bangumi": 1,
+            "platform": "ios",
+            "season_id": 0,
+            "spid": spID,
+            "type": "",
         ]
         
-        Alamofire.request(.GET, "123", parameters: [
-            "foo": "bar",
-            "baz": ["a", 1],
-            "qux": [
-                "x": 1,
-                "y": 2,
-                "z": 3
-            ]
-            ])//.response { (request, repsonse, data, error) -> Void in
-            
+        Alamofire.request(.GET, "123", parameters: parameters).response { (request, repsonse, data, error) -> Void in
+            let JSONData = JSON(data: data as NSData)
+            let list = JSONData["list"].arrayValue
+        }
+        
         //}
     }
     
