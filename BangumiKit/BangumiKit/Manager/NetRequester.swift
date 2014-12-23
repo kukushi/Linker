@@ -18,8 +18,9 @@ public enum NetRequesterErrorType: Int {
 }
 
 public typealias BangumisFetcherCallback = (bangumis:[Bangumi]!, errorType:NetRequesterErrorType) -> Void
-public typealias SPFetcherCallback = (bangumiSPs:[BangumiSP]!, errorType:NetRequesterErrorType) -> Void
+public typealias SPFetcherCallback = (episodes:[Episode]!, errorType:NetRequesterErrorType) -> Void
 //public typealias BangumiSearchResultCallback
+
 /**
 *  Net
 */
@@ -35,14 +36,16 @@ class NetRequester {
     }
     
     // MARK:
-    private let bangumisFetchingURL = NSURL(string: "http://www.bilibili.tv/index/bangumi.json")
     private let host = "http://api.bilibili.com"
-    private let BilibiliAPIkey = "0f38c1b83b2de0a0"
+    private class var BilibiliAPIkey: String {
+        return "0f38c1b83b2de0a0"
+    }
     
     // MARK: Fetch Bangumis
     
-    func fetchBangumis(callback: BangumisFetcherCallback) {
+    class func fetchBangumis(callback: BangumisFetcherCallback) {
         let session = NSURLSession.sharedSession()
+        let bangumisFetchingURL = NSURL(string: "http://www.bilibili.tv/index/bangumi.json")
         session.dataTaskWithURL(bangumisFetchingURL!, completionHandler: { (data, response, error) -> Void in
             var cachedBangumis: [Bangumi]!
             var errorType: NetRequesterErrorType
@@ -67,7 +70,7 @@ class NetRequester {
     }
     
     // MARK: Fetch SP
-    func fetchSP(#spID: Int) {
+    class func fetchSPEpisodes(#spID: Int, callback: SPFetcherCallback) {
         var parameters : [String: AnyObject] = [
             "appkey": BilibiliAPIkey,
             "bangumi": 1,
@@ -79,7 +82,16 @@ class NetRequester {
         
         Alamofire.request(.GET, "123", parameters: parameters).response { (request, repsonse, data, error) -> Void in
             let JSONData = JSON(data: data as NSData)
-            let list = JSONData["list"].arrayValue
+            if let list = JSONData["list"].array {
+                var episodes = [Episode]()
+                for dict in list {
+                    episodes.append(Episode(dict: dict))
+                }
+                callback(episodes: episodes, errorType: .Success)
+            }
+            else {
+                
+            }
         }
         
         //}
@@ -92,7 +104,7 @@ class NetRequester {
 
 extension NetRequester {
     
-    private func parseBangumis(data: NSData) -> [Bangumi]? {
+    private class func parseBangumis(data: NSData) -> [Bangumi]? {
         /*
         let JSONData = JSON(data: data)
         var bangumis = [Bangumi]()

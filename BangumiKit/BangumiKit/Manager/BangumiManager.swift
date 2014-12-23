@@ -63,8 +63,7 @@ public class BangumiManager {
     :param: backgroundFetcher
     */
     public func checkBangumisUpdate(#bangumiBackrgoundFetcher: BangumiBackgroundFetch) {
-        let netRequester = NetRequester.sharedRequester
-        netRequester.fetchBangumis { (bangumis, errorType) -> Void in
+        NetRequester.fetchBangumis { (bangumis, errorType) -> Void in
             if errorType == .Success {
                 if self.bangumis == nil {
                     self.retriveBangumis()
@@ -160,7 +159,7 @@ public class BangumiManager {
     }
     
     public func fetchNewBangumis(callback: BangumisFetcherCallback) {
-        NetRequester.sharedRequester.fetchBangumis { (bangumis, errorType) -> Void in
+        NetRequester.fetchBangumis { (bangumis, errorType) -> Void in
             self.bangumis = bangumis
             callback(bangumis: bangumis, errorType: errorType)
         }
