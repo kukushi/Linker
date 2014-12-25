@@ -18,7 +18,7 @@ public class BangumiManager {
     
     private var shouldSaveStarBangumiData = false
     private var shouldSaveBangumiData = false
-    private var observedSPList: [String]!
+    private var observedSPList: [Int]!
     
     
     
@@ -104,8 +104,16 @@ public class BangumiManager {
     
     
     public func checkSPUpdate(#SPBackgroundFetcher: SPBackgroundFetch) {
-        for spID in observedSPList {
+        
+        if countElements(observedSPList) > 0 {
             
+            let episodeData = NSData
+        }
+        
+        for spID in observedSPList {
+            NetRequester.fetchSPEpisodes(spID: spID, callback: { (episodes, errorType) -> Void in
+                <#code#>
+            })
         }
     }
     
